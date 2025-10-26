@@ -22,7 +22,7 @@ function listeboksKlasse()
       $klasssenavn=$rad["klasssenavn"];
       $studiumkode=$rad["studiumkode"];
 
-      print("<option value='$klassekode'>$klassekode $klassenavn $studiumkode</option>");  /* ny verdi i listeboksen laget */
+      print("<option value='$klassekode'>$klassekode $klasssenavn $studiumkode</option>");  /* ny verdi i listeboksen laget */
     }
 }
 
