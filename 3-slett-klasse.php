@@ -45,8 +45,7 @@
         }  
          catch (mysqli_sql_exception $e)
         {
-          print("Feil ved sletting av klasse: <br/>
-          " . $e->getMessage());
+          print("Kan ikke slette klasse som har aktive studenter <br/>");
         }
         }
     }
