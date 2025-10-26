@@ -37,12 +37,16 @@
         if ($rad = mysqli_fetch_array($resultat))
             $klasssenavn = $rad["klasssenavn"];
             $studiumkode = $rad["studiumkode"];
-
+        try
+        {
           $sqlSetning="DELETE FROM klasse WHERE klassekode='$klassekode';";
-          mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; slette data i databasen");
-            /* SQL-setning sendt til database-serveren */
-		
+          mysqli_query($db,$sqlSetning)
           print ("F&oslash;lgende klasse er n&aring; slettet: $klassekode $klasssenavn $studiumkode <br />");
+        }  
+         catch (mysqli_sql_exception $e)
+        {
+          print("Feil ved sletting av klasse: " . $e->getMessage());
+        }
         }
     }
 ?>
