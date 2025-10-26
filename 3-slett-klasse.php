@@ -40,7 +40,7 @@
         try
         {
           $sqlSetning="DELETE FROM klasse WHERE klassekode='$klassekode';";
-          mysqli_query($db,$sqlSetning)
+          mysqli_query($db,$sqlSetning);
           print ("F&oslash;lgende klasse er n&aring; slettet: $klassekode $klasssenavn $studiumkode <br />");
         }  
          catch (mysqli_sql_exception $e)
