@@ -45,7 +45,8 @@
         }  
          catch (mysqli_sql_exception $e)
         {
-          print("Feil ved sletting av klasse: " . $e->getMessage());
+          print("Feil ved sletting av klasse: <br/>
+          " . $e->getMessage());
         }
         }
     }
