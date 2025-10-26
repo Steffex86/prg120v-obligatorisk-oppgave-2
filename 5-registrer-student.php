@@ -17,6 +17,10 @@
     <option value="IT2">IT2</option>
     <option value="IT3">IT3</option>
   </select>  <br />
+  Klasse <select name="klasse" id="klasse">
+    <option value="">Velg klasse</option>
+    <?php include("dynamiske-funksjoner.php"); listeboksKlasse(); ?>
+  </select>  <br />
 
   <input type="submit" value="Registrer student" id="registrerStudentKnapp" name="registrerStudentKnapp" /> 
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />

@@ -11,7 +11,7 @@
 
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return bekreft()">
   Student 
-  <select name="student" id="student">
+    <select name="student" id="student">
     <option value="">Velg student</option>
     <?php include("dynamiske-funksjoner.php"); listeboksStudent(); ?>
   </select>  <br/>
