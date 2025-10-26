@@ -25,7 +25,7 @@
 	  
       if (!$klassekode)
         {
-          print ("Det er ikke valgt noe klasse");
+          print ("Det er ikke valgt noen klasse");
         }
       else
         {	  		 
