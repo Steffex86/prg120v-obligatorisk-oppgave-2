@@ -11,14 +11,8 @@
   Brukernavn <input type="text" id="brukernavn" name="brukernavn" required /> <br/>
   Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/>
   Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>
-  Klassekode <select name="klassekode" id="klassekode" required >
+  Klassekode <select name="klassekode" id="klassekode" required>
     <option value="">Velg klassekode</option>
-    <option value="IT1">IT1</option>
-    <option value="IT2">IT2</option>
-    <option value="IT3">IT3</option>
-  </select>  <br />
-  Klasse <select name="klasse" id="klasse">
-    <option value="">Velg klasse</option>
     <?php include("dynamiske-funksjoner.php"); listeboksKlasse(); ?>
   </select>  <br />
 
